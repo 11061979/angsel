@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-30T19:15:15 PST" name="Default suite" finished-at="2025-01-30T19:15:15 PST" duration-ms="215">
+    <groups>
+    </groups>
+    <test started-at="2025-01-30T19:15:15 PST" name="Default test" finished-at="2025-01-30T19:15:15 PST" duration-ms="215">
+      <class name="seleniumanguel.angelselenium.SampleTestNgTest">
+        <test-method is-config="true" signature="initTestSuite()[pri:0, instance:seleniumanguel.angelselenium.SampleTestNgTest@702b8b12]" started-at="2025-01-30T19:15:15 PST" name="initTestSuite" finished-at="2025-01-30T19:15:15 PST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTestSuite -->
+        <test-method is-config="true" signature="initWebDriver()[pri:0, instance:seleniumanguel.angelselenium.SampleTestNgTest@702b8b12]" started-at="2025-01-30T19:15:15 PST" name="initWebDriver" finished-at="2025-01-30T19:15:15 PST" duration-ms="140" status="FAIL">
+          <exception class="ru.stqa.selenium.factory.DriverCreationError">
+            <message>
+              <![CDATA[java.lang.reflect.InvocationTargetException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[ru.stqa.selenium.factory.DriverCreationError: java.lang.reflect.InvocationTargetException
+at ru.stqa.selenium.factory.ReflectionBasedInstanceCreator.callConstructor(ReflectionBasedInstanceCreator.java:58)
+at ru.stqa.selenium.factory.ReflectionBasedInstanceCreator.createDriver(ReflectionBasedInstanceCreator.java:44)
+at ru.stqa.selenium.factory.DefaultLocalDriverProvider.createDriver(DefaultLocalDriverProvider.java:54)
+at ru.stqa.selenium.factory.AbstractWebDriverPool.newDriver(AbstractWebDriverPool.java:36)
+at ru.stqa.selenium.factory.ThreadLocalSingleWebDriverPool.createNewDriver(ThreadLocalSingleWebDriverPool.java:120)
+at ru.stqa.selenium.factory.ThreadLocalSingleWebDriverPool.getDriver(ThreadLocalSingleWebDriverPool.java:42)
+at seleniumanguel.angelselenium.TestNgTestBase.initWebDriver(TestNgTestBase.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at ru.stqa.selenium.factory.ReflectionBasedInstanceCreator.callConstructor(ReflectionBasedInstanceCreator.java:50)
+... 36 more
+Caused by: org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Pros-MacBook-Pro.local', ip: 'fe80:0:0:0:4a:4b29:369c:d68e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.7', java.version: '22.0.1'
+Driver info: driver.version: FirefoxDriver
+at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:100)
+at java.base/java.util.Optional.orElseGet(Optional.java:364)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:133)
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+... 39 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- ru.stqa.selenium.factory.DriverCreationError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initWebDriver -->
+        <test-method is-config="true" signature="initPageObjects()[pri:0, instance:seleniumanguel.angelselenium.SampleTestNgTest@702b8b12]" started-at="2025-01-30T19:15:15 PST" name="initPageObjects" finished-at="1969-12-31T16:00:00 PST" duration-ms="-1738293315295" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjects -->
+        <test-method signature="testHomePageHasAHeader()[pri:0, instance:seleniumanguel.angelselenium.SampleTestNgTest@702b8b12]" started-at="2025-01-30T19:15:15 PST" name="testHomePageHasAHeader" finished-at="2025-01-30T19:15:15 PST" duration-ms="0" status="SKIP">
+          <exception class="ru.stqa.selenium.factory.DriverCreationError">
+            <message>
+              <![CDATA[java.lang.reflect.InvocationTargetException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[ru.stqa.selenium.factory.DriverCreationError: java.lang.reflect.InvocationTargetException
+at ru.stqa.selenium.factory.ReflectionBasedInstanceCreator.callConstructor(ReflectionBasedInstanceCreator.java:58)
+at ru.stqa.selenium.factory.ReflectionBasedInstanceCreator.createDriver(ReflectionBasedInstanceCreator.java:44)
+at ru.stqa.selenium.factory.DefaultLocalDriverProvider.createDriver(DefaultLocalDriverProvider.java:54)
+at ru.stqa.selenium.factory.AbstractWebDriverPool.newDriver(AbstractWebDriverPool.java:36)
+at ru.stqa.selenium.factory.ThreadLocalSingleWebDriverPool.createNewDriver(ThreadLocalSingleWebDriverPool.java:120)
+at ru.stqa.selenium.factory.ThreadLocalSingleWebDriverPool.getDriver(ThreadLocalSingleWebDriverPool.java:42)
+at seleniumanguel.angelselenium.TestNgTestBase.initWebDriver(TestNgTestBase.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:523)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at ru.stqa.selenium.factory.ReflectionBasedInstanceCreator.callConstructor(ReflectionBasedInstanceCreator.java:50)
+... 36 more
+Caused by: org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Pros-MacBook-Pro.local', ip: 'fe80:0:0:0:4a:4b29:369c:d68e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.7', java.version: '22.0.1'
+Driver info: driver.version: FirefoxDriver
+at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:100)
+at java.base/java.util.Optional.orElseGet(Optional.java:364)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:133)
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+... 39 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- ru.stqa.selenium.factory.DriverCreationError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHomePageHasAHeader -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumanguel.angelselenium.SampleTestNgTest@702b8b12]" started-at="2025-01-30T19:15:15 PST" name="tearDown" finished-at="2025-01-30T19:15:15 PST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- seleniumanguel.angelselenium.SampleTestNgTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
