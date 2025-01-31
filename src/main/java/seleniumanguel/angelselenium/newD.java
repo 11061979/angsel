@@ -25,6 +25,11 @@ public class newD {
 		Thread.sleep(3000);
 		Thread.sleep(3000);
 		Thread.sleep(3000);
+		Thread.sleep(3000);
+		Thread.sleep(3000);
+
+		
+
 
 		
 		//angelselenium
